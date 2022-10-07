@@ -67,5 +67,20 @@ namespace BubbleShort
                 }
             }
         }
+        static void Main(string[] args)
+        {
+            // Creating the ob ject of the BubbleShort class
+            Program myList = new Program();
+
+            // Pemanggilan fungsi untuk menerima elemen array
+            myList.read();
+            // Pemanggilan fungsi untuk mengurutkan array
+            myList.BubbleShortArray();
+            // Pemanggilan fungsi untuk menampilkan array yang tersusun
+            myList.display();
+            // Exit
+            Console.WriteLine("\n\nTekan Tombol Apa Saja Untuk Keluar.");
+            Console.Read();
+        }
     }
 }
